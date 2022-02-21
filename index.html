@@ -2,7 +2,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="robots" content="noindex" />
-<title>~</title>
+<title>Homepage</title>
 
 <script>
   const CONFIG = {
@@ -22,12 +22,12 @@
     /**
      * The delimiter between the hours, minutes and seconds on the clock.
      */
-    clockDelimiter: ' – ',
+    clockDelimiter: ' : ',
 
     /**
      * Show seconds on the clock. A monospaced font is recommended for this.
      */
-    clockShowSeconds: false,
+    clockShowSeconds: true,
 
     /**
      * Show AM/PM indication when CONFIG.clockTwentyFourHours is false.
@@ -37,7 +37,7 @@
     /**
      * Show a twenty-four-hour clock instead of a twelve-hour clock.
      */
-    clockTwentyFourHour: true,
+    clockTwentyFourHour: false,
 
     /**
      * Force an IANA timezone. Useful when attempting to prevent browser
@@ -77,7 +77,7 @@
      * time, you'd type "q'cats".
      */
     scripts: {
-      q: ['bing', 'yah', 'eco', 'ddg', '*'],
+      q: ['bing', 'google', 'yah', 'eco', 'ddg', '*'],
     },
 
     /**
@@ -142,7 +142,7 @@
     commands: [
       {
         color: 'var(--base-background)',
-        key: 'null',
+        key: 'google',
         search: '/search?q={}',
         url: 'https://www.google.com',
       },
